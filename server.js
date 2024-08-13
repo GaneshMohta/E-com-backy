@@ -11,19 +11,19 @@ const mongoose = require("mongoose");
 app.use(express.json())
 app.use(cors());
 
-mongoose.connect(
-    "mongodb+srv://ganimaheshwari07:EcomGanesh@cluster0.2txvex6.mongodb.net/"
-).then(()=>{
-    console.log("connected to database");
-}).catch((e)=>{
-    console.log(e)
-})
-
-// mongoose.connect("mongodb://127.0.0.1/ecom-back").then(()=>{
+// mongoose.connect(
+//     "mongodb+srv://ganimaheshwari07:EcomGanesh@cluster0.2txvex6.mongodb.net/"
+// ).then(()=>{
 //     console.log("connected to database");
 // }).catch((e)=>{
 //     console.log(e)
 // })
+
+mongoose.connect("mongodb://127.0.0.1/ecom-back").then(()=>{
+    console.log("connected to database");
+}).catch((e)=>{
+    console.log(e)
+})
 
 
 
